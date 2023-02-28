@@ -8,11 +8,12 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "dotenv -- turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "dotenv-cli": "^7.0.0",
     "eslint-config-custom": "*",
     "prettier": "latest",
     "turbo": "latest"
